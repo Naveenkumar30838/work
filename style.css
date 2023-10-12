@@ -1,63 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* utility class */
-.strong {
-    font-size: 18px;
-    font-weight: bold;
-}
-.start{
-    text-align: start!important;
-}
-/* Cart Styling */
-#cart{
-    width: 95vmax;
-    padding: 15px 0px 30px 30px;
-}
-.cartTable{
-    width: 100%;
-}
-.cartTable thead tr td{
-    padding: 15px 0;
-    font-weight: 700;
-    font-size: 20px;
-}
-.cartTable td{
-    padding-top: 15px;
-    font-size: 18px;
-    text-align: center;
-    height: fit-content;
-    border: 2px solid red;
-}
-/* styling First Column */
-/* styling buttons */
-.button {
-    margin-block:10px;
-    background-color: rgb(9, 186, 0);
-    border: none;
-    color: white;
-    padding: 8px 18px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 10px;
-    transition: background-color .5s;
-    cursor: pointer;
-  }
-  .button:hover {
-    background-color: rgb(57, 225, 48);
-  }
-.buttonRow td{
-    padding-block: 15px 8px;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* utility class */
+    .strong {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .start{
+        text-align: start!important;
+    }
 
-@media screen and (max-width: 768px)  {
+    /* Cart Styling */
     #cart{
-        rotate: 90deg;
-        height: 100vw;
-        overflow: auto;
-        border: 2px solid blue;
-    }   
-}
+        width: 95%;
+        padding: 15px 0px 30px 30px;
+    }
+    .cartTable{
+        width: 100%;
+    }
+    .cartTable thead tr td{
+        padding: 15px 0;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .cartTable td{
+        padding-top: 15px;
+        font-size: 18px;
+        text-align: center;
+        height: fit-content;
+        border: 2px solid transparent;
+    }
+    /* styling First Column */
+    /* styling buttons */
+    .button {
+        margin-block:10px;
+        background-color: rgb(9, 186, 0);
+        border: none;
+        color: white;
+        padding: 8px 18px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 10px;
+        transition: background-color .5s;
+        cursor: pointer;
+    }
+    .button:hover {
+        background-color: rgb(57, 225, 48);
+    }
+    .buttonRow td{
+        padding-block: 15px 8px;
+    }
+
+     @media screen and (max-width: 768px)  {
+            #cart{
+                width: 100vw;
+                height: 100vh;
+                margin-block: 2px;
+                padding: 0px;
+                overflow: auto;
+            }
+            .cartTable{
+                padding-bottom: 20px;
+                overflow: auto;
+                transform: rotate(90deg);
+            }
+            .cartTable td{
+                min-width: 210px;
+            }
+        }
